@@ -20,12 +20,12 @@ This lightweight and minimalistic data table includes essential features out of 
 ## 📦 Installation
 
 ```bash
-npm install react-data-table
+npm install data-table-grid
 ```
 ## 🚀 Usage
 
 ```js
-import DataTableGrid  from "react-data-table";
+import DataTableGrid  from "data-table-grid";
 
 
 const users = [

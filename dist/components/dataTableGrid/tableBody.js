@@ -3,7 +3,7 @@ import { useCallback } from "react";
 import styled from "styled-components";
 const TableBodyWrapper = styled.tbody `
      width: 100%;
-
+     
     tr{
         text-align: left;
         border-bottom: 1px solid ${({ theme }) => theme.border?.default};

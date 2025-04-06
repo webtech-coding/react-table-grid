@@ -9,7 +9,7 @@ const TableHeaderWrapper = styled.thead `
         text-align: left;
         border-bottom: 1px solid ${({ theme }) => theme.border?.default};
         border-top: 1px solid ${({ theme }) => theme.border?.default};
-        background-color:${({ theme }) => theme.background?.default};
+        background-color:${({ theme }) => theme.background?.header};
         
         th{
             padding: 15px 10px;

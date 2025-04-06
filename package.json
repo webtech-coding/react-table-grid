@@ -1,10 +1,10 @@
 {
-  "name": "react-table-grid",
-  "version": "0.0.1",
+  "name": "data-table-grid",
+  "version": "0.0.3",
   "description": "A customizable and reusable React table component.",
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/types/index.d.ts",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -16,7 +16,9 @@
     "table",
     "grid",
     "data-table",
-    "components"
+    "components",
+    "react table grid",
+    "react-table"
   ],
   "author": "",
   "license": "ISC",
@@ -27,9 +29,11 @@
     "@rollup/plugin-typescript": "^12.1.2",
     "@types/react": "^19.1.0",
     "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "rollup": "^4.39.0",
     "rollup-plugin-dts": "^6.2.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "styled-component": "^2.8.0",
     "tslib": "^2.8.1",
     "typescript": "^5.8.3"
   },
@@ -37,5 +41,9 @@
     "@types/prop-types": "^15.7.14",
     "prop-types": "^15.8.1",
     "styled-components": "^6.1.17"
+  },
+  "repository": {
+    "type":"git",
+    "url": "https://github.com/webtech-coding/react-table-grid"
   }
 }
