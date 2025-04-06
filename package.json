@@ -1,6 +1,6 @@
 {
   "name": "data-table-grid",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "A customizable and reusable React table component.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

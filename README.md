@@ -51,7 +51,7 @@ const headers = [
 
 function App() {
   return (
-    <DataTable 
+    <DataTableGrid 
         headers={headers} 
         rows={users} 
         showActionBar = {true}
