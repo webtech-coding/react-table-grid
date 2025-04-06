@@ -1,0 +1,41 @@
+{
+  "name": "react-table-grid",
+  "version": "0.0.1",
+  "description": "A customizable and reusable React table component.",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "rollup": "rollup -c --bundleConfigAsCjs"
+  },
+  "keywords": [
+    "react",
+    "table",
+    "grid",
+    "data-table",
+    "components"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/react": "^19.1.0",
+    "react": "^19.1.0",
+    "rollup": "^4.39.0",
+    "rollup-plugin-dts": "^6.2.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.8.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@types/prop-types": "^15.7.14",
+    "prop-types": "^15.8.1",
+    "styled-components": "^6.1.17"
+  }
+}

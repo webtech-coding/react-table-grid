@@ -1,0 +1,201 @@
+.data-table{
+    width: 100%;
+
+    &__table{
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        box-shadow: 0 0 10px var(--c-shade);
+        margin-top: 15px;
+        background-color: #ffffff;
+        overflow-x: auto;
+    }
+
+    &__header{
+        width: 100%;
+
+        tr{
+            text-align: left;
+            border-bottom: 1px solid var(--c-border);
+            border-top: 1px solid var(--c-border);
+            background-color: #ffffff;
+           
+            th{
+                padding: 15px 10px;
+                color: var(--c-font-dark);
+                border-right: 1px solid var(--c-border);
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+        }
+
+        &-content{
+            display: flex;
+            justify-content: space-between;
+
+            svg{
+                width: 14px;
+                height: 14px;
+                transform: rotate(90deg);
+                fill: var(--c-font);
+                cursor: pointer;
+
+                &:hover{
+                    fill: #0076bf;
+
+                }
+            }
+
+            &--active{
+                svg{
+                    fill: #0076bf;
+                }
+                
+            }
+        }
+    }
+
+    &__body{
+        width: 100%;
+
+        tr{
+            text-align: left;
+            border-bottom: 1px solid var(--c-border);
+            cursor: pointer;
+       
+        }
+       
+        td{
+            padding: 18px 10px;
+            color: var(--c-font);
+        }
+
+        &--stripe{
+            tr{
+                &:nth-of-type(2n){
+                    background-color: var(--c-stripe);
+                }
+            }
+        }
+    }
+
+    &__action-bar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__search{
+        display: flex;
+        align-items: center;
+        input{
+            border: 1px solid var(--c-border);
+            padding: 10px;
+            width: 400px;
+            padding-left: 30px;
+            outline-color: none;
+
+            &:focus{
+                border: var(--c-border);
+                outline-color: var(--c-border);
+                outline-style:inset;
+            }
+        }
+
+        svg{
+            height: 24px;
+            width: 24px;
+            fill: var(--c-font-dark);
+            margin-right: -24px;
+            z-index: 10;
+        }
+    }
+
+    &__entries{
+        display: flex;
+        align-items: center;
+        color: var(--c-font);
+       
+
+        select{
+            height: 36px;
+            width: 60px;
+            border: 1px solid var(--c-border);
+            outline-color: #cccccc;
+            margin: 0 10px;
+            color: var(--c-font);
+            text-align: center;
+        }
+    }
+
+    &__pages{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    &__pagination{
+        display: flex;
+        border: 1px solid var(--c-border);
+        height: 36px;
+        align-items: center;
+
+
+        &-nav{
+            padding: 0 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            height: 36px;
+
+            svg{
+                fill: var(--c-font);
+                height: 20px;
+                width: 20px;
+            }
+
+            &--reverse{
+                svg{
+                    transform: rotate(180deg);
+                }
+            }
+
+            &:hover{
+                background-color: var(--c-stripe);
+                
+            }
+
+            &--disabled{
+                cursor: default;
+                opacity: .3;
+            }
+        }
+
+        &-page{
+            height: 36px;
+            display: flex;
+            align-items: center;
+            width: 36px;
+            justify-content: center;
+            border: 1px solid var(--c-border);
+            cursor: pointer;
+
+            strong{
+                padding: 0 5px;
+            }
+        }
+
+        &-index{
+            width: 120px;
+           
+        }
+    }
+
+    &__error{
+        background-color: #d62828;
+        color: #ffffff;
+        padding: 20px;
+    }
+}   
