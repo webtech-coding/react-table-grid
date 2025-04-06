@@ -117,7 +117,7 @@ const DataTableGrid:FC<TableProps> = (props):ReactElement=>{
     /**
      * A table must have a header. Headerless table is inavalid
      */
-    if(headers.length){
+    if(!headers.length){
         return(
             <div className="data-table__error">
                Inalid table data !! Please provide heders for your table.
